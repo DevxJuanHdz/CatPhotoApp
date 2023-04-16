@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatPhotoApp</title>
+</head>
+<body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section>
+        <h2>Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+        <ul>
+          <li>cat nip</li>
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+        <!--El elemento "figure" representa contenido independiente y te permitira asociar una imagen a una descripcion-->
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+            <!--Un elemento "figcaption" se utiliza para añadir una descripcion o una leyenda para describir una imagen anidada dentro de un elemento "figure"-->
+            <figcaption>Cats <em>love</em> lasagna</figcaption>
+        </figure>
+        <h3>Top 3 things cats hate:</h3>
+        <ol>
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field."/>
+          <!--El elemento "strong" se utiliza para indicar que una parte de un texto es importante o urgente-->
+          <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo.">
+            <!--El atributo "name" se utiliza para identificar un dato de un formulario en un servidor o DB-->
+
+            <!--Los elementos input y button son elementos "in-line por eso no se aplica un salto de linea uno despues del otro-->
+
+            <!--Para hacer que al seleccionar un radio button el otro se des-seleccione hay que agregarles el atributo name igual a cada uno-->
+
+            <!--Si se selecciona un radio button y se envia el form, los datos enviados se basaran en sus atributos "name" y "value"
+                al no tener un atributo "value" los datos se veran asi "indoor-outdoor=on"
+            -->
+
+            <!--Los elementos "fieldset sirven para agrupar elementos input y label relacionados dentro de un formulario"-->
+            
+            <fieldset>
+                <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor</label>
+                <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+            </fieldset>
+            <input type="text" name="catphotopurl" placeholder="cat photo URL">
+            <button type="submit">Submit</button>
+        </form>
+      </section>
+    </main>
+</body>
+</html>
