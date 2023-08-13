@@ -56,14 +56,31 @@
 
             <!--Los elementos "fieldset sirven para agrupar elementos input y label relacionados dentro de un formulario"-->
             
+            <!--Los elementos "legend sirven como una leyenda/descripcion para el contenido del elemento fieldset"-->
             <fieldset>
-                <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor</label>
+              <legend>Is your cat an indoor or outdoor cat</legend>
+                <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor" checked> Indoor</label>
                 <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+            </fieldset>
+            <fieldset>
+              <legend>What's your cat's personality?</legend>
+              <input type="checkbox" value="loving" name="personality" id="loving" checked>
+              <label for="loving">Loving</label>
+
+              <input id="lazy" type="checkbox" value="lazy" name="personality">
+              <label for="lazy">Lazy</label>
+
+              <input id="energetic" type="checkbox" value="energetic" name="personality">
+              <label for="energetic"> Energetic</label>
+          </fieldset>
             </fieldset>
             <input type="text" name="catphotopurl" placeholder="cat photo URL">
             <button type="submit">Submit</button>
         </form>
       </section>
     </main>
+    <footer>
+      <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org </a></p>
+    </footer>
 </body>
 </html>
